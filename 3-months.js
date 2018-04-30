@@ -18,3 +18,19 @@ const months = [
 for (let i = 0; i < months.length; i++) {
   console.log(months[i].name, 'has', months[i].days, 'days');
 }
+
+for (let i = 0; i < months.length; i++) {
+  console.log(months[i].name, 'has', months[i].days, 'days');
+}
+
+let totalNumberOfDays = 0;
+
+for (let i = 0; i < months.length; i++) {
+  totalNumberOfDays += months[i].days;
+}
+
+if (totalNumberOfDays === 365) {
+  console.log('Yep, it adds up to 365.');
+} else {
+  console.log('Oh no! It doesn\'t add up to 365!');
+}
